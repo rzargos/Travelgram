@@ -14,10 +14,18 @@
     --text-color-secondary: #6C6C6C;
 
     --font-family: "Poppins", sans-serif;
-    --text-lg: bold 32px/125% var(--font-family);
-    --text: 16px 150% var(--font-family);
-    --text-md: 14px/170% var(--font-family);
-    --text-sm: 12px/170% var(--font-family);
+    --text-lg: bold 2rem/125% var(--font-family);
+    --text: 1rem 150% var(--font-family);
+    --text-md: .875rem/170% var(--font-family);
+    --text-sm: .75rem/170% var(--font-family);
+
+    --px-base: 1rem;
+    --px-lg: 2rem;
+
+    --py-base: 1rem;
+    --py-md: 1.25rem;
+    --py-lg: 1.5rem;
+    --py-xl: 2rem;
 }
 
 body {
@@ -28,20 +36,21 @@ body {
 
 a {
     text-decoration: none;
-    color: inherit
-}
+    color: inherit;
 
-a:hover {
-    color: var(--brand-color);
-    text-decoration: underline;
-}
-
-.container {
-    padding-inline: 32px;
-    max-width: 1280px;
-    margin-inline: auto;
+     & :hover{
+        color: var(--brand-color);
+        text-decoration: underline;
+        }
 }
 
 .bg-surface-color {
     background-color: var(--surface-color);
+}
+
+@media (width >= 80em) {
+    :root {
+        --px-base: 2rem;
+        --py-base: 1.25rem; 
+    }
 }
