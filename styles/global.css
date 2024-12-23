@@ -6,7 +6,7 @@
 
 :root {
     --brand-color: #EF5F4C;
-    --background-color : #FFFFFF;
+    --background-color: #FFFFFF;
     --surface-color: #F5F5F5;
     --skeleton-color: #D9D9D9;
     --shape-transparency: #ffffff91;
@@ -38,19 +38,23 @@ a {
     text-decoration: none;
     color: inherit;
 
-     & :hover{
+    &:hover {
         color: var(--brand-color);
         text-decoration: underline;
-        }
+    }
 }
 
 .bg-surface-color {
     background-color: var(--surface-color);
 }
 
-@media (width >= 80em) {
+@media (width >=80em) {
     :root {
         --px-base: 2rem;
-        --py-base: 1.25rem; 
+        --py-base: 1.25rem;
     }
+}
+
+li {
+    list-style: none;
 }

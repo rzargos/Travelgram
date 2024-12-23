@@ -1,0 +1,37 @@
+nav {
+
+    & a:nth-child(1) {
+        margin-right: auto;
+    }
+
+    & a:nth-child(2) {
+        background-image: url(../assets/icons/busca.svg);
+        width: 1.5rem;
+        height: 1.5rem;
+
+        background-position: center;
+
+        &:hover {
+            background-image: url(../assets/icons/busca-hover.svg);
+        }
+    }
+
+    & a:nth-child(5) {
+        & img {
+            width: 2.5rem;
+            height: 2.5rem;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (width >= 80rem) {
+
+    .container {
+        --max-width: 100%;
+    }
+
+    .desktop-only {
+        display: initial;
+    }
+}
