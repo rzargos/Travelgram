@@ -34,7 +34,16 @@ body {
     background-color: var(--background-color);
 }
 
+span {
+    font: var(--text-md);
+}
+
+p {
+    font: var(--text-md);
+}
+
 a {
+    font: var(--text);
     text-decoration: none;
     color: inherit;
 
@@ -42,6 +51,11 @@ a {
         color: var(--brand-color);
         text-decoration: underline;
     }
+}
+
+h1 {
+    color: var(--text-color-primary);
+    margin-bottom: .5rem;
 }
 
 .bg-surface-color {

@@ -1,0 +1,36 @@
+#profile {
+    & img {
+        width: 11rem;
+        margin-bottom: 1rem;
+    }
+}
+
+#info {
+    margin-top: 2rem;
+    margin-left: auto;
+}
+
+@media (width >= 80rem) {
+    header {
+        display: flex;
+    }
+
+    #profile {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-right: auto;
+        max-width: 45%;
+    }
+
+    #info {
+        flex-direction: column;
+        width: 17.5rem;
+    }
+}
+
+.stat-item {
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-block: 1rem;
+}
