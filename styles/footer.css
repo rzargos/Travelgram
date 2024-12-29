@@ -1,0 +1,22 @@
+footer {
+    & p {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    & div {
+        gap: 1rem;
+        justify-content: center;
+    }
+}
+
+@media (width >= 80rem) {
+    footer {
+        display: flex;
+
+        & p {
+            margin-right: auto;
+        }
+
+    }
+}
